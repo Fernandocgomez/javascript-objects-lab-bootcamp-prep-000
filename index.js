@@ -14,3 +14,9 @@ function deleteFromObjectByKey(object, key) {
   delete clone[key];
   return clone;
 }
+
+function destructivelyDeleteFromObjectByKey(object, key) {
+  return delete key.value;
+}
+
+
